@@ -1,0 +1,147 @@
+body {
+  background-color: #d5caec;
+  color: #333;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+h2, h3 {
+  font-weight: 800;
+}
+
+header {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0 1em 0 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li {
+  margin-right: 1em;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+header nav ul li a:focus,
+header nav ul li a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+header nav ul li a:active {
+  color: #ffe600;
+}
+
+.articles {
+  padding: 1em;
+}
+
+aside {
+  padding: 1em;
+}
+
+@media (min-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    width: 300px;
+  }
+
+  aside figure {
+    margin: 1em 0;
+  }
+
+  aside figure img {
+    border: thin solid #666;
+  }
+
+  aside form.search input {
+    width: calc(100% - 1em);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    border: thin solid #666;
+    border-radius: 2px;
+  }
+
+  aside form.sign-in {
+    margin: 0.5em 0;
+    display: flex;
+  }
+
+  aside form.sign-in input {
+    display: block;
+    width: 110px;
+    padding: 0.25em;
+    margin-right: 0.5em;
+    border: thin solid #666;
+    border-radius: 2px;
+  }
+
+  aside form.sign-in button {
+    display: block;
+    padding: 0.25em;
+    background-color: #8b43db;
+    color: white;
+    width: 72px;
+    border: thick solid #5d2e91;
+    border-radius: 2px;
+  }
+
+  .articles {
+  }
+}
+
+footer {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer nav {
+  display: flex;
+  padding: 2em;
+  border: thin solid #666;
+  border-radius: 2px;
+  background-color: #b0a5c7;
+  color: white;
+}
+
+footer nav section {
+  padding: 0 1em;
+}
+
+footer nav section:not(:first-child) {
+  border-left: thin solid #666;
+}
+
+footer nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer nav h3,
+footer nav ul {
+  margin: 0;
+}
